@@ -1,0 +1,12 @@
+{
+  "name": "godia-prime-music-ai",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Existing GODIA PRIME MUSIC AI frontend with Netlify backend scaffolding for Hugging Face and Safaricom Daraja",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
+  }
+}
