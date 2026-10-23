@@ -1,13 +1,72 @@
 [build]
-  publish = "."
-  functions = "netlify/functions"
+publish = "."
+functions = "netlify/functions"
+
+[functions]
+node_bundler = "esbuild"
 
 [[redirects]]
-  from = "/api/mpesa/stkpush"
-  to = "/.netlify/functions/mpesa-stkpush"
-  status = 200
+from = "/api/mpesa/stkpush"
+to = "/.netlify/functions/mpesa-stk-push"
+status = 200
+force = true
 
 [[redirects]]
-  from = "/api/mpesa/status"
-  to = "/.netlify/functions/mpesa-status"
-  status = 200
+from = "/api/mpesa/status"
+to = "/.netlify/functions/mpesa-payment-status"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/generate"
+to = "/.netlify/functions/music-generate"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/upload"
+to = "/.netlify/functions/music-upload"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/catalog"
+to = "/.netlify/functions/music-catalog"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/download"
+to = "/.netlify/functions/music-download"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/library"
+to = "/.netlify/functions/music-library"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/purchases"
+to = "/.netlify/functions/my-purchases"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/health"
+to = "/.netlify/functions/health"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/mpesa/callback-health"
+to = "/.netlify/functions/mpesa-callback-health"
+status = 200
+force = true
+
+[[redirects]]
+from = "/api/music/generation-status"
+to = "/.netlify/functions/music-generation-status"
+status = 200
+force = true
