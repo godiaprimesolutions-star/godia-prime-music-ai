@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/mpesa/stkpush"
+  to = "/.netlify/functions/mpesa-stkpush"
+  status = 200
+
+[[redirects]]
+  from = "/api/mpesa/status"
+  to = "/.netlify/functions/mpesa-status"
+  status = 200
